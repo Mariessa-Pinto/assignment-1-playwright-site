@@ -1,0 +1,165 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem 6rem 6rem 6rem ;
+    min-height: 100vh;
+    background-image: url('/background-images/backgroundMountainUpsideDown.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: var(--primary-color);
+    font-family: var(--project-font)
+}
+
+.line {
+    width: 28vw;
+    height: 0.2rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 140px;
+    margin-top: 85px;
+}
+
+.subheader {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 88px;
+}
+
+.arrow {
+    position: fixed;
+    right: 9rem;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.topRowStyle {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+}
+
+.inputEmail {
+    width: 200%;
+}
+
+.labelAndInputLeft {
+    text-align: left;
+    padding: 2rem 0.1rem 1rem 2rem;
+}
+
+.labelAndInputRight {
+    text-align: left;
+    padding: 2rem 2rem 1rem 0.1rem;
+}
+
+.labelAndInputEmail {
+    text-align: left;
+    padding: 0 0 2rem 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formWidth {
+    width: 55vw;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--primary-color);
+  }
+
+.button:hover {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.opacity {
+    opacity: 0;
+    display: none;
+}
+
+.opacityButtonLayout {
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 55vw;
+    margin-top: 1rem;
+}
+
+.border {
+    border: 2px solid var(--quinary-color);
+}
+
+/* Desktop */ 
+@media only screen and (min-width: 1000px) {
+
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+    .main {
+        padding: 4rem;
+        background-size: 200% 100%;
+    }
+    .header {
+        padding-bottom: 94px;
+        margin-top: 40px;
+    }
+    .subheader {
+        padding-bottom: 60px;
+    }
+    .formWidth {
+        width: 85vw;
+    }
+    .opacityButtonLayout {
+        width: 85vw;
+    }
+    .arrow {
+        right: 8rem;
+    }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 3rem;
+        background-size: 300% 100%;
+    }
+    .header {
+        padding-bottom: 110px;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .subheader {
+        padding-bottom: 15px;
+    }
+    .formWidth {
+        width: 80vw;
+    }
+    .opacityButtonLayout {
+        width: 80vw;
+    }
+    .arrow {
+       right: 4rem; 
+    }
+}

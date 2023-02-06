@@ -1,0 +1,38 @@
+.menu {
+    height: 40px;
+    cursor: pointer;
+}
+
+.x {
+  cursor: pointer;
+}
+
+.fullMenu {
+  background: url(/background-images/menuBackground.png);
+  background-size: cover;
+  z-index: 10;
+  display: flex;
+  width: 375px;
+  height: 377px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 80px;
+  gap: 40px;
+}
+
+.openMenu {
+  list-style-type: none;
+  padding-top: 30px;
+}
+
+.menuItem {
+  margin-bottom: 40px;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 500;
+}

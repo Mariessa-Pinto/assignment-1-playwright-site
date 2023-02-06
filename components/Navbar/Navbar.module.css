@@ -1,0 +1,10 @@
+.gradHat {
+    height: 40px;
+  }
+
+  .navBar {
+    display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+  }
